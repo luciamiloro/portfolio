@@ -35,7 +35,11 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
       subject: `Portfolio · ${name}${company ? ` (${company})` : ""}`,
       text: `${message}\n\n— ${name} <${email}>${company ? ` · ${company}` : ""}`,
     });
-    return { status: error ? "error" : "success" };
+    if (error) {
+      console.error("[contact] Resend rechazó el envío:", error);
+      return { status: "error" };
+    }
+    return { status: "success" };
   } catch (err) {
     console.error("[contact]", err);
     return { status: "error" };
