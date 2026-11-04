@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@import "@fontsource-variable/fraunces";
+@import "@fontsource-variable/inter";
+
+/* Dark mode por clase (.dark en <html>), controlada por next-themes */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Tokens de diseño ----------
+   Paleta "papel y tinta" con acento violeta (continuidad con el CV).
+   Todo el color sale de acá: para cambiar la identidad, tocá solo estas variables. */
+:root {
+  --paper: #f6f3ee;
+  --paper-2: #ece7df;
+  --ink: #1d1b22;
+  --ink-2: #57525e;
+  --line: #d9d2c7;
+  --accent: #5b4bc4;
+  --accent-ink: #ffffff;
+  --accent-soft: #e6e1fb;
+  --red: #e5484d;
+
+  --c-lake: #1f5f6b;
+  --c-clay: #b9573a;
+  --c-moss: #4f6b3a;
+  --c-ink: #2b2838;
+  --c-violet: #5b4bc4;
+  --c-sand: #b48a4a;
+}
+
+.dark {
+  --paper: #121117;
+  --paper-2: #1b1a22;
+  --ink: #f0ece6;
+  --ink-2: #a9a3b2;
+  --line: #2e2c38;
+  --accent: #a89cf5;
+  --accent-ink: #15121f;
+  --accent-soft: #262140;
+  --red: #ff6b6f;
+
+  --c-lake: #2d7f8d;
+  --c-clay: #c9694c;
+  --c-moss: #6a8a51;
+  --c-ink: #3b3750;
+  --c-violet: #7465d8;
+  --c-sand: #c19b5c;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --font-display: "Fraunces Variable", Georgia, serif;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- Título "del boceto al código" ---------- */
+.sketch .cl { stroke: var(--accent); stroke-width: 1; stroke-dasharray: 4 4; opacity: 0; }
+.sketch .cl-label { font: 400 11px ui-monospace, "SFMono-Regular", Menlo, monospace; fill: var(--accent); opacity: 0; }
+.sketch .cota { stroke: var(--red); stroke-width: 1; opacity: 0; }
+.sketch .cota-t { font: 500 11px ui-monospace, "SFMono-Regular", Menlo, monospace; fill: var(--red); opacity: 0; }
+.sketch .t1, .sketch .t2 { font-family: "Fraunces Variable", Georgia, serif; letter-spacing: -2px; fill: transparent; stroke-width: 0; }
+.sketch .t1 { font-weight: 500; }
+.sketch .t2 { font-style: italic; font-weight: 400; }
+/* Estado final (sin JS todavía, reduced motion o animación terminada) */
+.sketch:not(.play) .t1, .sketch.done .t1 { fill: var(--ink); }
+.sketch:not(.play) .t2, .sketch.done .t2 { fill: var(--accent); }
+/* Animación */
+.sketch.play .t1 { stroke: var(--ink); stroke-width: 1.2; stroke-dasharray: 1400; stroke-dashoffset: 1400;
+  animation: sk-draw 1.4s 0.5s ease-out forwards, sk-ink1 0.6s 1.9s ease forwards; }
+.sketch.play .t2 { stroke: var(--accent); stroke-width: 1.2; stroke-dasharray: 1600; stroke-dashoffset: 1600;
+  animation: sk-draw 1.4s 0.9s ease-out forwards, sk-ink2 0.6s 2.3s ease forwards; }
+.sketch.play .cl { animation: sk-in 0.4s ease forwards, sk-dim 0.6s 2.6s ease forwards; }
+.sketch.play .cl-label { animation: sk-in 0.4s 0.3s ease forwards, sk-out 0.5s 2.6s ease forwards; }
+.sketch.play .cota, .sketch.play .cota-t { animation: sk-in 0.4s 0.5s ease forwards, sk-out 0.5s 2.7s ease forwards; }
+@keyframes sk-in { to { opacity: 1; } }
+@keyframes sk-out { to { opacity: 0; } }
+@keyframes sk-dim { to { opacity: 0.1; } }
+@keyframes sk-draw { to { stroke-dashoffset: 0; } }
+@keyframes sk-ink1 { to { fill: var(--ink); stroke-width: 0; } }
+@keyframes sk-ink2 { to { fill: var(--accent); stroke-width: 0; } }
+
+/* ---------- Microinteracciones de tarjetas ---------- */
+.pcard { position: relative; transform-style: preserve-3d;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s, border-color 0.2s; }
+.pcard::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity 0.3s;
+  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--accent) 16%, transparent), transparent 60%); }
+.pcard:hover::after { opacity: 1; }
+.pcard:hover { box-shadow: 0 18px 40px -18px rgb(0 0 0 / 0.25); }
+@media (pointer: fine) { .pcard { cursor: none; } }
+.reveal-ready .pcard-wrap { opacity: 0; transform: translateY(28px); }
+.reveal-ready .pcard-wrap.in { opacity: 1; transform: none;
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); transition-delay: var(--d, 0ms); }
+.view-cursor { position: fixed; left: 0; top: 0; z-index: 60; width: 72px; height: 72px; margin: -36px 0 0 -36px;
+  border-radius: 9999px; background: var(--ink); color: var(--paper); display: grid; place-items: center;
+  font-size: 12px; font-weight: 600; pointer-events: none; transform: scale(0);
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.view-cursor.show { transform: scale(1); }
+@media (pointer: coarse) { .view-cursor { display: none; } }
+
+/* Modal nativo <dialog> */
+dialog::backdrop {
+  background: rgb(10 8 16 / 0.55);
+  backdrop-filter: blur(4px);
+}
+dialog[open] {
+  animation: pop 0.22s ease-out;
+}
+@keyframes pop {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

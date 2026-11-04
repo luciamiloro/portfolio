@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Lucía Miloro — Software Developer · Power Platform & Frontend",
+    "description": "Software Developer at Softtek. Business apps with Microsoft Power Platform, Power BI and AI (Azure OpenAI), plus web interfaces with React and Next.js. Graphic Designer (University of Buenos Aires)."
+  },
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "skip": "Skip to content",
+    "theme": "Toggle theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Software Developer · Patagonia, Argentina · Remote",
+    "titleA": "I build software",
+    "titleB": "with a designer's eye.",
+    "lead": "I build business apps on Microsoft Power Platform and Power BI, integrate AI with Azure OpenAI, and develop web interfaces with React and Next.js. With a degree in Graphic Design from the University of Buenos Aires, I care as much about how things read as how they run.",
+    "ctaProjects": "See projects",
+    "ctaCv": "Download CV",
+    "ctaContact": "Let's talk",
+    "stats": {
+      "years": "years as a developer at Softtek",
+      "projects": "featured projects",
+      "langs": "working languages (Spanish native · English C1)"
+    }
+  },
+  "projects": {
+    "kicker": "Selected work",
+    "title": "Projects",
+    "intro": "Personal projects you can try, plus the work I do at Softtek for enterprise clients.",
+    "filters": {
+      "all": "All",
+      "personal": "Personal projects",
+      "professional": "Work at Softtek"
+    },
+    "featured": "Featured",
+    "viewDetail": "View details",
+    "close": "Close",
+    "problem": "The problem",
+    "solution": "The solution",
+    "role": "My role",
+    "highlights": "Results & highlights",
+    "stack": "Tech stack",
+    "demo": "Live demo",
+    "repo": "Code on GitHub",
+    "soon": "Demo coming soon",
+    "items": {
+      "expenses": {
+        "title": "Cuentas Claras",
+        "tagline": "A personal finance app I use every single day.",
+        "problem": "My spending was scattered across credit card, bank and brokerage, and I kept finding out too late about USD charges I should have paid before the automatic debit.",
+        "solution": "A web app with Google sign-in that tracks expenses by month and category, alerts me before the credit card due date, and shows savings growth regardless of the broker. The same data feeds a Power BI dashboard.",
+        "role": "End-to-end design, development and deployment: data model, authentication, UI, and continuous deployment from GitHub to Vercel.",
+        "highlights": [
+          "In production and in real daily use — not a demo.",
+          "Google authentication with data synced across devices (Supabase).",
+          "Guest mode to try it without an account: data stays in your browser only.",
+          "Due-date alerts designed for foreign-currency charges.",
+          "Bridges web development and analytics: the same data powers a Power BI report."
+        ]
+      },
+      "realestate": {
+        "title": "Real estate landing pages",
+        "tagline": "Two real properties in Patagonia, with an interactive floor-plan tour and a visual identity of their own.",
+        "problem": "Listing a property on generic portals makes it look like every other listing and leaves inquiries up to the algorithm.",
+        "solution": "A dedicated landing page for each property: a house in Lago Puelo, for sale and for rent, and a rental apartment in downtown Esquel. The house can be explored through an interactive floor plan: tap any room to see its photos. Each landing has its own art direction and a flow that leads straight to contact.",
+        "role": "Art direction, UX/UI, development and deployment.",
+        "highlights": [
+          "Interactive floor-plan tour of the house: hotspots on each room open its photos, with separate views for the interior and for the land and workshop.",
+          "A distinct visual identity per property: earthy tones and serif type for the house, a fresh, clean palette for the apartment.",
+          "Key facts at a glance (lot size, rooms, bathrooms) to answer what every prospect asks first.",
+          "Location map built with Leaflet and OpenStreetMap, with no paid APIs.",
+          "Mobile-first design, since most inquiries come from phones.",
+          "⟨add: real outcome, e.g. number of inquiries or contacts⟩"
+        ],
+        "demos": {
+          "rent": "See apartment (Esquel)"
+        },
+        "demoLabel": "See house (Lago Puelo)"
+      },
+      "canvas": {
+        "title": "Power Apps canvas apps",
+        "tagline": "Custom business apps for enterprise teams.",
+        "problem": "Processes living in spreadsheets, emails and chats: no traceability, data-entry errors and hard to audit.",
+        "solution": "I design and build canvas apps connected to Dataverse and SharePoint, including a master data management app and a project tracker with photo evidence uploads.",
+        "role": "End-to-end development: user discovery, data modeling, screen design and Power Fx logic.",
+        "highlights": [
+          "Interfaces designed for business users, with a graphic designer's eye.",
+          "Validation and permissions so data is right from the start.",
+          "Integrated with Dataverse, SharePoint and Power Automate flows."
+        ]
+      },
+      "automate": {
+        "title": "Power Automate workflows",
+        "tagline": "Flows that take repetitive work off people's plates.",
+        "problem": "Approvals by email, manual reminders and data copied by hand between systems: wasted time and errors.",
+        "solution": "Power Automate Cloud flows for approvals, notifications and data sync across Dataverse, SharePoint and Office 365, plus desktop automation (RPA) with Power Automate Desktop.",
+        "role": "Flow design and development, error handling and documentation for the team.",
+        "highlights": [
+          "Automated approvals and reminders instead of manual follow-up.",
+          "Integrated with the canvas apps to close the loop end to end.",
+          "RPA with Power Automate Desktop for systems without an API."
+        ]
+      },
+      "powerbi": {
+        "title": "Power BI reports & dashboards",
+        "tagline": "Business data turned into decisions.",
+        "problem": "Teams that need to track business KPIs without relying on manual Excel exports.",
+        "solution": "Multi-page reports and dashboards with DAX measures and data modeling, focused on a clear visual layer for business users.",
+        "role": "Visual and DAX layer: page design, measures, navigation and report UX.",
+        "highlights": [
+          "DAX measures for KPIs and period-over-period comparisons.",
+          "Multi-page reports with clear visual hierarchy.",
+          "Professional Certificate in Data Visualization Skills (ITBA, 2025)."
+        ]
+      },
+      "chatbot": {
+        "title": "Internal chatbot with Azure OpenAI",
+        "tagline": "Generative AI that answers questions about company documentation.",
+        "problem": "Internal knowledge was scattered across manuals and procedures that were hard to find when needed.",
+        "solution": "A chatbot that searches internal documentation with Azure Cognitive Search and generates answers with Azure OpenAI (RAG pattern).",
+        "role": "Integrated Azure OpenAI and Cognitive Search to implement the chatbot.",
+        "highlights": [
+          "Generative AI applied to a real enterprise use case.",
+          "Answers grounded in the company's own documentation (RAG), not generic knowledge.",
+          "Hands-on experience with Azure AI services in an enterprise setting."
+        ]
+      }
+    },
+    "confidential": "Built for Softtek clients. Screens, names and data are not shown for confidentiality.",
+    "cursor": "View"
+  },
+  "about": {
+    "kicker": "About",
+    "title": "Between code and design",
+    "p1": "Since 2023 I've been a Software Developer at Softtek, working with enterprise clients to build apps with Power Apps, Power Automate, Dataverse and SharePoint, Power BI reports with DAX, and an internal chatbot with Azure OpenAI and Cognitive Search.",
+    "p2": "Before coding, I trained as a Graphic Designer at the University of Buenos Aires and taught visual arts. That background shows in my work: clear interfaces, strong visual hierarchy and empathy for the people using the product.",
+    "p3": "I'm looking for projects where I can bring both together: solid business logic and interfaces people actually enjoy using.",
+    "stackTitle": "Stack",
+    "groups": {
+      "lowcode": "Low-Code, Data & Cloud",
+      "frontend": "Frontend",
+      "backend": "Backend & Data",
+      "design": "UX/UI Design",
+      "tools": "Tools & Methodologies"
+    },
+    "timelineTitle": "Education",
+    "education": [
+      {
+        "year": "2025",
+        "title": "Data Visualization Skills",
+        "place": "ITBA"
+      },
+      {
+        "year": "2024",
+        "title": "JavaScript & TypeScript Programming",
+        "place": "UTN Buenos Aires"
+      },
+      {
+        "year": "2023",
+        "title": "Low-Code Power Apps Developer",
+        "place": "UTN Buenos Aires"
+      },
+      {
+        "year": "2023",
+        "title": "Certified Tech Developer — Front End",
+        "place": "Digital House"
+      },
+      {
+        "year": "2021",
+        "title": "Graphic Designer (bachelor's degree)",
+        "place": "FADU – University of Buenos Aires"
+      }
+    ],
+    "academicTitle": "Academic projects",
+    "academic": [
+      {
+        "year": "2023",
+        "title": "Digital Money House — digital wallet",
+        "place": "Capstone of the Front End specialization (Digital House) · Next.js, TypeScript, Material UI, GitFlow"
+      },
+      {
+        "year": "2021",
+        "title": "Digital Booking — accommodation booking",
+        "place": "Certified Tech Developer capstone (Digital House), built as a team with Scrum · React, AWS, testing, GitLab"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Got a project or an open role?",
+    "lead": "Drop me a line — I reply within 48 hours. Working remotely from Argentina.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company (optional)",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Thanks! I'll get back to you soon.",
+    "error": "Couldn't send it. Email me directly at",
+    "invalid": "Please check the fields: name, a valid email and a message of at least 10 characters.",
+    "or": "or email me at"
+  },
+  "footer": {
+    "rights": "Designed and built by Lucía Miloro.",
+    "built": "Built with Next.js, Tailwind CSS and next-intl."
+  }
+}

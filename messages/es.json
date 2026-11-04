@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Lucía Miloro — Software Developer · Power Platform & Frontend",
+    "description": "Software Developer en Softtek. Apps de negocio con Microsoft Power Platform, Power BI e IA (Azure OpenAI), e interfaces web con React y Next.js. Diseñadora Gráfica (FADU–UBA)."
+  },
+  "nav": {
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "skip": "Saltar al contenido",
+    "theme": "Cambiar tema",
+    "themeLight": "Claro",
+    "themeDark": "Oscuro",
+    "themeSystem": "Sistema",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Software Developer · Esquel, Patagonia · Remoto",
+    "titleA": "Desarrollo software",
+    "titleB": "con ojo de diseñadora.",
+    "lead": "Construyo apps de negocio en Microsoft Power Platform y Power BI, integro IA con Azure OpenAI y desarrollo interfaces web con React y Next.js. Vengo del diseño gráfico (FADU–UBA): me importa tanto que funcione como que se entienda a la primera.",
+    "ctaProjects": "Ver proyectos",
+    "ctaCv": "Descargar CV",
+    "ctaContact": "Hablemos",
+    "stats": {
+      "years": "años como developer en Softtek",
+      "projects": "proyectos destacados",
+      "langs": "idiomas de trabajo (ES nativo · EN C1)"
+    }
+  },
+  "projects": {
+    "kicker": "Trabajo seleccionado",
+    "title": "Proyectos",
+    "intro": "Proyectos propios que podés probar, y el trabajo que hago en Softtek para clientes corporativos.",
+    "filters": {
+      "all": "Todos",
+      "personal": "Proyectos propios",
+      "professional": "Experiencia en Softtek"
+    },
+    "featured": "Destacado",
+    "viewDetail": "Ver detalle",
+    "close": "Cerrar",
+    "problem": "El problema",
+    "solution": "La solución",
+    "role": "Mi rol",
+    "highlights": "Resultados y aspectos clave",
+    "stack": "Tecnologías",
+    "demo": "Demo en vivo",
+    "repo": "Código en GitHub",
+    "soon": "Demo próximamente",
+    "items": {
+      "expenses": {
+        "title": "Cuentas Claras",
+        "tagline": "App de finanzas personales que uso todos los días.",
+        "problem": "Tenía los gastos repartidos entre la tarjeta, el banco y el broker, y me enteraba tarde de los consumos en dólares que convenía pagar antes del débito automático.",
+        "solution": "Una web app con login de Google que registra gastos por mes y categoría, avisa antes del vencimiento de la tarjeta y muestra la evolución de los ahorros sin importar en qué broker estén. Los datos se analizan además en un dashboard de Power BI.",
+        "role": "Diseño, desarrollo y despliegue completos: modelo de datos, autenticación, UI y deploy continuo desde GitHub a Vercel.",
+        "highlights": [
+          "En producción y en uso diario real (no es un demo).",
+          "Autenticación con Google y datos sincronizados entre dispositivos (Supabase).",
+          "Modo invitado para probarla sin cuenta: los datos quedan solo en tu navegador.",
+          "Alertas de vencimiento pensadas para consumos en moneda extranjera.",
+          "Puente entre desarrollo web y analítica: los mismos datos alimentan un reporte en Power BI."
+        ]
+      },
+      "realestate": {
+        "title": "Landings inmobiliarias",
+        "tagline": "Dos propiedades reales en la Patagonia, con recorrido interactivo por plano y su propia identidad visual.",
+        "problem": "Publicar una propiedad en portales genéricos la iguala a todas las demás y deja las consultas en manos del algoritmo.",
+        "solution": "Una landing propia para cada propiedad: una casa en Lago Puelo, en venta y alquiler, y un departamento en alquiler en el centro de Esquel. La casa se recorre desde un plano interactivo: tocás cada ambiente y ves sus fotos. Cada landing tiene dirección de arte propia y un recorrido que lleva directo al contacto.",
+        "role": "Dirección de arte, UX/UI, desarrollo y publicación.",
+        "highlights": [
+          "Recorrido interactivo sobre el plano de la casa: puntos en cada ambiente que abren sus fotos, con vistas separadas para el interior y para el terreno y el galpón.",
+          "Identidad visual distinta para cada propiedad: tonos tierra y tipografía serif para la casa, una paleta fresca y limpia para el depto.",
+          "Datos clave de un vistazo (superficie, ambientes, baños) para responder lo primero que pregunta cualquier interesado.",
+          "Mapa de ubicación con Leaflet y OpenStreetMap, sin depender de APIs pagas.",
+          "Diseño mobile-first, porque la mayoría de las consultas llegan desde el celular.",
+          "⟨completar: resultado real, ej. cantidad de consultas o contactos⟩"
+        ],
+        "demos": {
+          "rent": "Ver depto (Esquel)"
+        },
+        "demoLabel": "Ver casa (Lago Puelo)"
+      },
+      "canvas": {
+        "title": "Apps canvas en Power Apps",
+        "tagline": "Aplicaciones de negocio a medida para equipos corporativos.",
+        "problem": "Procesos que vivían en planillas, mails y chats: sin trazabilidad, con errores de carga y difíciles de auditar.",
+        "solution": "Diseño y desarrollo apps canvas conectadas a Dataverse y SharePoint. Entre ellas, una app de gestión de datos maestros y un gestor de proyectos con carga de evidencia fotográfica.",
+        "role": "Desarrollo de punta a punta: relevamiento con el usuario, modelo de datos, diseño de pantallas y lógica en Power Fx.",
+        "highlights": [
+          "Interfaces pensadas para el usuario de negocio, con criterio de diseño gráfico.",
+          "Validaciones y permisos para que los datos entren bien desde el primer momento.",
+          "Integración con Dataverse, SharePoint y flujos de Power Automate."
+        ]
+      },
+      "automate": {
+        "title": "Automatizaciones con Power Automate",
+        "tagline": "Flujos que sacan las tareas repetitivas de las manos de la gente.",
+        "problem": "Aprobaciones por mail, avisos manuales y datos copiados a mano entre sistemas: tiempo perdido y errores.",
+        "solution": "Flujos en Power Automate Cloud para aprobaciones, notificaciones y sincronización de datos entre Dataverse, SharePoint y Office 365, y automatizaciones de escritorio (RPA) con Power Automate Desktop.",
+        "role": "Diseño y desarrollo de los flujos, manejo de errores y documentación para el equipo.",
+        "highlights": [
+          "Aprobaciones y avisos automáticos en lugar de seguimiento manual.",
+          "Integración con las apps canvas para cerrar el circuito completo.",
+          "RPA con Power Automate Desktop para sistemas sin API."
+        ]
+      },
+      "powerbi": {
+        "title": "Reportes y dashboards en Power BI",
+        "tagline": "Datos de negocio convertidos en decisiones.",
+        "problem": "Equipos que necesitan seguir indicadores de negocio sin depender de exportes manuales a Excel.",
+        "solution": "Reportes y dashboards de varias páginas con medidas DAX y modelado de datos, con foco en una capa visual clara para usuarios de negocio.",
+        "role": "Capa visual y DAX: diseño de páginas, medidas, navegación y experiencia de uso del reporte.",
+        "highlights": [
+          "Medidas DAX para indicadores y comparativas entre períodos.",
+          "Reportes multi-página con jerarquía visual clara.",
+          "Certificación Profesional en Data Visualization Skills (ITBA, 2025)."
+        ]
+      },
+      "chatbot": {
+        "title": "Chatbot interno con Azure OpenAI",
+        "tagline": "IA generativa que responde sobre la documentación de la empresa.",
+        "problem": "La información interna estaba repartida en manuales y procedimientos difíciles de encontrar cuando se necesitan.",
+        "solution": "Chatbot que busca en la documentación interna con Azure Cognitive Search y genera las respuestas con Azure OpenAI (patrón RAG).",
+        "role": "Integración de Azure OpenAI y Cognitive Search para implementar el chatbot.",
+        "highlights": [
+          "IA generativa aplicada a un caso real de empresa.",
+          "Respuestas basadas en la documentación propia (RAG), no en conocimiento genérico.",
+          "Experiencia con servicios de IA de Azure en un entorno corporativo."
+        ]
+      }
+    },
+    "confidential": "Desarrollado para clientes de Softtek. Por confidencialidad no se muestran pantallas, nombres ni datos.",
+    "cursor": "Ver"
+  },
+  "about": {
+    "kicker": "Sobre mí",
+    "title": "Entre el código y el diseño",
+    "p1": "Desde 2023 soy Software Developer en Softtek. Trabajo con clientes corporativos construyendo aplicaciones con Power Apps, Power Automate, Dataverse y SharePoint, reportes en Power BI con DAX, y un chatbot interno con Azure OpenAI y Cognitive Search.",
+    "p2": "Antes de programar me formé como Diseñadora Gráfica en la UBA y fui docente de artes visuales. Esa mirada se nota en lo que hago: interfaces claras, jerarquía visual y empatía con quien usa el producto.",
+    "p3": "Hoy busco proyectos donde pueda unir las dos cosas: lógica de negocio sólida e interfaces que la gente disfrute usar.",
+    "stackTitle": "Stack",
+    "groups": {
+      "lowcode": "Low-Code, Datos & Cloud",
+      "frontend": "Frontend",
+      "backend": "Backend & Datos",
+      "design": "Diseño UX/UI",
+      "tools": "Herramientas & Metodologías"
+    },
+    "timelineTitle": "Formación",
+    "education": [
+      {
+        "year": "2025",
+        "title": "Data Visualization Skills",
+        "place": "ITBA"
+      },
+      {
+        "year": "2024",
+        "title": "Programación en JavaScript y TypeScript",
+        "place": "UTN Buenos Aires"
+      },
+      {
+        "year": "2023",
+        "title": "Desarrollador Low Code Power Apps",
+        "place": "UTN Buenos Aires"
+      },
+      {
+        "year": "2023",
+        "title": "Certified Tech Developer — Front End",
+        "place": "Digital House"
+      },
+      {
+        "year": "2021",
+        "title": "Diseñadora Gráfica (título de grado)",
+        "place": "FADU – UBA"
+      }
+    ],
+    "academicTitle": "Proyectos académicos",
+    "academic": [
+      {
+        "year": "2023",
+        "title": "Digital Money House — billetera virtual",
+        "place": "Proyecto integrador de la especialización Front End (Digital House) · Next.js, TypeScript, Material UI, GitFlow"
+      },
+      {
+        "year": "2021",
+        "title": "Digital Booking — reserva de alojamientos",
+        "place": "Proyecto integrador de Certified Tech Developer (Digital House), en equipo con Scrum · React, AWS, testing, GitLab"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "¿Tenés un proyecto o una búsqueda abierta?",
+    "lead": "Escribime: respondo en menos de 48 h. Trabajo remoto desde Argentina.",
+    "name": "Nombre",
+    "email": "Email",
+    "company": "Empresa (opcional)",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "success": "¡Gracias! Te respondo pronto.",
+    "error": "No se pudo enviar. Escribime directo a",
+    "invalid": "Revisá los campos: nombre, un email válido y un mensaje de al menos 10 caracteres.",
+    "or": "o escribime a"
+  },
+  "footer": {
+    "rights": "Diseñado y desarrollado por Lucía Miloro.",
+    "built": "Hecho con Next.js, Tailwind CSS y next-intl."
+  }
+}
