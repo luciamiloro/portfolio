@@ -74,13 +74,26 @@
           "A distinct visual identity per property: earthy tones and serif type for the house, a fresh, clean palette for the apartment.",
           "Key facts at a glance (lot size, rooms, bathrooms) to answer what every prospect asks first.",
           "Location map built with Leaflet and OpenStreetMap, with no paid APIs.",
-          "Mobile-first design, since most inquiries come from phones.",
-          "⟨add: real outcome, e.g. number of inquiries or contacts⟩"
+          "Mobile-first design, since most inquiries come from phones."
         ],
         "demos": {
           "rent": "See apartment (Esquel)"
         },
         "demoLabel": "See house (Lago Puelo)"
+      },
+      "mementomori": {
+        "title": "Memento Mori",
+        "tagline": "Your life in weeks: a printable poster built from your date of birth.",
+        "problem": "I wanted to print a calendar of my life in weeks for myself, and a static sheet would only ever have worked for me.",
+        "solution": "So I made it dynamic: enter your date of birth, mark your milestones and the app builds the poster, with one box per week. You can print it or download it in A4 or A3.",
+        "role": "Poster design, UX/UI, development and deployment.",
+        "highlights": [
+          "One design for the preview, the PDF and the PNG: the poster scales to fit each output instead of maintaining three versions.",
+          "Export as vector PDF or 300 dpi PNG, with a light-background version for printing at home without wasting ink.",
+          "Thousands of hand-drawn-style boxes that stay smooth while typing or moving the mouse, thanks to memoization and a single delegated hover listener.",
+          "Interface and poster in Spanish and English.",
+          "No accounts and no server: everything runs in the browser and your data stays on your device."
+        ]
       },
       "canvas": {
         "title": "Power Apps canvas apps",

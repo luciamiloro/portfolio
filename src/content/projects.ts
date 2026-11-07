@@ -52,6 +52,18 @@ export const projects: Project[] = [
       extraDemos: [{ key: "rent", url: "https://deptodiucon.vercel.app" }],
     },
   },
+  {
+    id: "mementomori",
+    mark: "MM",
+    category: "personal",
+    accent: "ink",
+    image: "/projects/mementomori.webp",
+    stack: ["TypeScript", "React", "Vite", "CSS print", "Vercel"],
+    links: {
+      demo: "https://mementomori-calendar.vercel.app",
+      repo: "https://github.com/luciamiloro/memento-mori",
+    },
+  },
 
   // ---------- Experiencia en Softtek (sin demos: confidencial) ----------
   {

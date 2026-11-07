@@ -74,13 +74,26 @@
           "Identidad visual distinta para cada propiedad: tonos tierra y tipografía serif para la casa, una paleta fresca y limpia para el depto.",
           "Datos clave de un vistazo (superficie, ambientes, baños) para responder lo primero que pregunta cualquier interesado.",
           "Mapa de ubicación con Leaflet y OpenStreetMap, sin depender de APIs pagas.",
-          "Diseño mobile-first, porque la mayoría de las consultas llegan desde el celular.",
-          "⟨completar: resultado real, ej. cantidad de consultas o contactos⟩"
+          "Diseño mobile-first, porque la mayoría de las consultas llegan desde el celular."
         ],
         "demos": {
           "rent": "Ver depto (Esquel)"
         },
         "demoLabel": "Ver casa (Lago Puelo)"
+      },
+      "mementomori": {
+        "title": "Memento Mori",
+        "tagline": "Tu vida en semanas, en un póster imprimible que se arma con tu fecha de nacimiento.",
+        "problem": "Quería imprimir para mí un calendario de mi vida en semanas, y una lámina estática solo me iba a servir a mí.",
+        "solution": "Decidí hacerlo dinámico: cargás tu fecha de nacimiento, marcás tus hitos y la app arma el póster, con una casilla por semana. Se puede imprimir o descargar en A4 o A3.",
+        "role": "Diseño gráfico del póster, UX/UI, desarrollo y publicación.",
+        "highlights": [
+          "Un solo diseño para la vista previa, el PDF y el PNG: el póster se escala según el destino, en lugar de mantener tres versiones.",
+          "Salida en PDF vectorial o PNG a 300 dpi, con versión de fondo claro para imprimir en casa sin gastar tinta.",
+          "Miles de casillas con trazo \"a mano\" que se mantienen fluidas al tipear o mover el mouse, gracias a la memoización y a un único listener para el hover.",
+          "Interfaz y póster en español e inglés.",
+          "Sin cuentas ni servidor: todo corre en el navegador y los datos quedan solo en tu dispositivo."
+        ]
       },
       "canvas": {
         "title": "Apps canvas en Power Apps",
